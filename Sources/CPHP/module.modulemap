@@ -1,0 +1,5 @@
+module CPHP [system] {
+  header "/usr/include/CPHP.h"
+  link "CPHP"
+  export *
+}
