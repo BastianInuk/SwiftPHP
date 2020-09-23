@@ -1,5 +1,6 @@
-@dynamicMemberLookup
-struct PHPObject {
+/** Swift representation of a PHP Object
+  */
+class PHPObject {
     subscript(dynamicMember member: String) -> Void {
         print(member)
     }
@@ -14,6 +15,11 @@ struct PHPObject {
         }
     }
     
+    /** Make a PHP class from string.
+      *
+      * Remember to use the `<?php ?>` tag or the object will be empty, this is to support legacy code with inline HTML
+      *
+      */
     init(class: String) {
         
     }
